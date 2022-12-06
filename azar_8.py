@@ -12,21 +12,76 @@
 '''Write a program that asks the user to input 10 integers,
 and then prints the largest odd number that was entered.
 If no odd number was entered, it should print a message to that effect'''
-largest_odd_number = 0
-for i in range(10):
-    number = int(input('> '))
-    if number % 2 != 0 and number > largest_odd_number:
-        largest_odd_number = number
 
-if largest_odd_number == 0:
-    print('you enterd no odd number')
-else:
-    print(f'biggest odd number is: {largest_odd_number}')
+
+# x = list(range(10))
+# print(x)
+
+# largest_odd_number = 0
+# for i in range(10):
+#     number = int(input('> '))
+#     if number % 2 != 0 and number > largest_odd_number:
+#         largest_odd_number = number
+
+# if largest_odd_number == 0:
+#     print('you enterd no odd number')
+# else:
+#     print(f'biggest odd number is: {largest_odd_number}')
 
 # exercise : write above code with while loop
+
+# i = 0
+# largest_odd_number = 0
+# while i < 10:
+#     number = int(input('> '))
+#     if number % 2 != 0 and number > largest_odd_number:
+#         largest_odd_number = number
+#     i = i + 1  # i +=1
+
+# if largest_odd_number == 0:
+#     print('you enterd no odd number')
+# else:
+#     print(f'biggest odd number is: {largest_odd_number}')
+
 # exercise :
 '''Write a program that examines three variables—x, y, and z—and prints the largest
 odd number among them. If none of them are odd, it should print a message to that effect'''
+
+x = int(input('enter number one:> '))
+y = int(input('enter number two:> '))
+z = int(input('enter number three:> '))
+
+if x % 2 == 0 and y % 2 == 0 and z % 2 == 0:
+    print('all numbers are even!!!')
+elif x % 2 == 0 and y % 2 == 0:
+    print(z)
+elif x % 2 == 0 and z % 2 == 0:
+    print(y)
+elif y % 2 == 0 and z % 2 == 0:
+    print(x)
+elif x % 2 == 0:
+    if y > z:
+        print(y)
+    else:
+        print(z)
+elif y % 2 == 0:
+    if x > z:
+        print(x)
+    else:
+        print(z)
+elif z % 2 == 0:
+    if x > z:
+        print(x)
+    else:
+        print(z)
+else:
+    if x > y and x > z:
+        print(x)
+    elif y > z:
+        print(y)
+    else:
+        print(z)
+
 
 # exercise : یک عدد از ورودی بگیر و به اون تعداد * رو به خودش بچسبان
 
