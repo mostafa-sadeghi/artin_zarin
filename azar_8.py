@@ -47,43 +47,53 @@ If no odd number was entered, it should print a message to that effect'''
 '''Write a program that examines three variables—x, y, and z—and prints the largest
 odd number among them. If none of them are odd, it should print a message to that effect'''
 
-x = int(input('enter number one:> '))
-y = int(input('enter number two:> '))
-z = int(input('enter number three:> '))
+# x = int(input('enter number one:> '))
+# y = int(input('enter number two:> '))
+# z = int(input('enter number three:> '))
 
-if x % 2 == 0 and y % 2 == 0 and z % 2 == 0:
-    print('all numbers are even!!!')
-elif x % 2 == 0 and y % 2 == 0:
-    print(z)
-elif x % 2 == 0 and z % 2 == 0:
-    print(y)
-elif y % 2 == 0 and z % 2 == 0:
-    print(x)
-elif x % 2 == 0:
-    if y > z:
-        print(y)
-    else:
-        print(z)
-elif y % 2 == 0:
-    if x > z:
-        print(x)
-    else:
-        print(z)
-elif z % 2 == 0:
-    if x > z:
-        print(x)
-    else:
-        print(z)
-else:
-    if x > y and x > z:
-        print(x)
-    elif y > z:
-        print(y)
-    else:
-        print(z)
+# if x % 2 == 0 and y % 2 == 0 and z % 2 == 0:
+#     print('all numbers are even!!!')
+# elif x % 2 == 0 and y % 2 == 0:
+#     print(z)
+# elif x % 2 == 0 and z % 2 == 0:
+#     print(y)
+# elif y % 2 == 0 and z % 2 == 0:
+#     print(x)
+# elif x % 2 == 0:
+#     if y > z:
+#         print(y)
+#     else:
+#         print(z)
+# elif y % 2 == 0:
+#     if x > z:
+#         print(x)
+#     else:
+#         print(z)
+# elif z % 2 == 0:
+#     if x > y:
+#         print(x)
+#     else:
+#         print(y)
+# else:
+#     if x > y and x > z:
+#         print(x)
+#     elif y > z:
+#         print(y)
+#     else:
+#         print(z)
 
 
 # exercise : یک عدد از ورودی بگیر و به اون تعداد * رو به خودش بچسبان
+
+# star = int(input('enter how many star numbers you want> '))
+# print(star * '*')
+
+# star = int(input('enter how many star numbers you want> '))
+# result = ''
+# for i in range(star):
+#     result += '*'
+
+# print(result)
 
 
 # exercise:
