@@ -55,10 +55,6 @@ Exercise:
 # print(output)
 
 import random
-
-for i in range(10):
-    print(random.randrange(1, 7), end=' ')
-
 frequency_1, frequency_2, frequency_3, frequency_4, frequency_5, frequency_6 = (
     0, 0, 0, 0, 0, 0)
 for i in range(10_000_000):
